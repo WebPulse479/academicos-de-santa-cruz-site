@@ -120,6 +120,14 @@ span {
 @media screen and (max-width: 768px) {
     .btn_icon_header {
         display: block;
+        padding: 7px;
+    }
+
+    .btn_icon_header:hover {
+        display: block;
+        background-color: var(--color-neutral-30);
+        padding: 7px;
+        border-radius: 7px;
     }
 
     .navigation_header {
