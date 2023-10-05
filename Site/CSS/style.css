@@ -1,0 +1,130 @@
+:root {
+  --royal-blue-light: #404eed;
+  --royal-blue-dark: #3946d4;
+  --white: #fff;
+  --background: #e2e2e9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typographic tweaks! */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #121214;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+}
+.container {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+}
+.header {
+  padding: 1rem 0;
+}
+
+.c-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-logo {
+  text-decoration: none;
+}
+.c-menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.c-menu__link {
+  text-decoration: none;
+}
+.c-menu__item {
+  position: relative;
+}
+.c-menu__item:hover .c-dropdown__submenu {
+  transform: translateX(-50%) rotateX(0);
+  opacity: 1;
+  transition-timing-function: ease-out;
+}
+
+.c-wrapper:has(.c-menu__link, .c-logo) {
+  color: var(--white);
+}
+
+.c-dropdown__submenu {
+  list-style: none;
+}
+
+.c-dropdown__submenu-link {
+  text-decoration: none;
+}
+
+.c-dropdown__submenu {
+  background-color: hotpink;
+  padding: 15px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) rotateX(-90deg);
+  transform-origin: top center;
+  opacity: 0.25;
+  transition: all 0.3s ease-in;
+}
+
+.c-dropdown__submenu::after {
+  content: "";
+  border: 8px solid transparent;
+  border-bottom-color: hotpink;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
