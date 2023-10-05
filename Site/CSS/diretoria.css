@@ -50,16 +50,24 @@ body {
 
 .navigation_header a {
     text-decoration: none;
-    color: #008025;
+    color: var(--color-neutral-50);
     transition: 1s;
     font-weight: bolder;
 }
 
 .navigation_header a:hover {
     text-decoration: underline;
-    color: #008025;
+    color: var(--color-neutral-50);
     transition: .8s;
     font-weight: bolder;
+}
+
+.btn_icon_header {
+    background-color: transparent;
+    border: none;
+    color: var(--color-neutral-50);
+    cursor: pointer;
+    display: none;
 }
 
 .active {
@@ -106,3 +114,32 @@ span {
     color: var(--color-neutral-10);
 }
 
+@media screen and (max-width: 768px) {
+    .btn_icon_header {
+        display: block;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--bg-footer);
+        height: 100%;
+        width: 35vw;
+        padding: 1rem;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    @keyframes showSidebar {
+        from {
+            margin-left: -100vw;
+        } top {
+            margin-left: -10vw;
+        }
+    }
+
+    main {
+        width: 400px;
+    }
+}
