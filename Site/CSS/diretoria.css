@@ -54,6 +54,7 @@ body {
     color: var(--color-neutral-50);
     transition: 1s;
     font-weight: bolder;
+    white-space: nowrap;
 }
 
 .navigation_header a:hover {
@@ -61,6 +62,7 @@ body {
     color: var(--color-neutral-50);
     transition: .8s;
     font-weight: bolder;
+    white-space: nowrap;
 }
 
 .btn_icon_header {
@@ -71,11 +73,11 @@ body {
     display: none;
 }
 
-.active {
+/* .active {
     background-color: var(--color-neutral-30);
     padding: 10px;
     border-radius: 10px;
-}
+} */
 
 main h1 {
     display: flex;
