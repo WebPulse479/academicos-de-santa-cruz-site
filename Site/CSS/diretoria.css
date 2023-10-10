@@ -228,16 +228,21 @@ span {
 @media (max-width: 1027px) {
     /* header {
          padding: 10px 20px; 
-    }  */
+    }   */
 
     header nav {
         position: absolute;
-        width: 70%;
+        width: 100%;
         top: 66px;
         left: 0;
         background-color: var(--color-neutral-40);
         box-shadow: 0 1px 3px 0px rgba(29, 28, 28, 0.322);
         border-radius: 7px;
+        display: none;
+    }
+
+    header.active nav {
+        display: initial;
     }
 
     header nav ul li {
@@ -262,6 +267,7 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 1;
     }
 
     .menuToggle::before {
@@ -282,4 +288,17 @@ span {
         transform: translateY(12px);
         background-color: var(--color-neutral-50);
     }
+
+    header.active .menuToggle::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0 var(--color-neutral-50);
+        transition: 300ms;
+    }
+
+    header.active .menuToggle::after {
+        transform: rotate(315deg);
+        transition: 300ms;
+    }
+
+    
 }
