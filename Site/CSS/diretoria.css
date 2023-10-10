@@ -225,9 +225,9 @@ span {
 } */
 
 @media (max-width: 900px) {
-    header {
-        /* padding: 10px 20px; */
-    }
+    /* header {
+         padding: 10px 20px; 
+    }  */
 
     header nav {
         position: absolute;
@@ -280,6 +280,5 @@ span {
         height: 3px;
         transform: translateY(12px);
         background-color: var(--color-neutral-50);
-        
     }
 }
