@@ -145,7 +145,7 @@ header ul li ul li {
 
 main {
     transition: 1s;
-    width: 500px;
+    max-width: 475px;
     display: flex;
     margin: auto;
     padding: 2rem;
