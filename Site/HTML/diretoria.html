@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Dancing+Script&family=Great+Vibes&family=Libre+Baskerville&family=Lobster&family=Sacramento&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header" id="header">
+    <!-- <div class="header" id="header">
         <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -35,10 +35,40 @@
             <a href="/Site/HTML/socio.html">SEJA NOSSO SÓCIO</a>
             <a href="/Site/HTML/nossa-loja.html">NOSSA LOJA</a>
         </div>
-    </div>
+    </div> -->
+
+    <header>
+        <img src="/Images/Logo/santa-cruz-logo-removebg-preview.png" class="img_logo_header" alt="Logo Acadêmicos de Santa Cruz"> 
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <a href="#">A ESCOLA<strong>▾</strong></a>
+                    <ul>
+                        <li><a href="#">SEGMENTOS</a></li>
+                        <li><a href="#" class="border-top">NOTÍCIAS</a></li>
+                        <li><a href="#" class="border-top">CONTATO</a></li>
+                        <li><a href="/Site/HTML/desfile-conosco.html" class="border-top" style="white-space: nowrap;" class="border-top">DESFILE CONOSCO</a></li>
+                        <li><a href="/Site/HTML/nossa-historia.html" class="border-top">NOSSA HISTÓRIA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CARNAVAIS <strong>▾</strong></a>
+                    <ul>
+                        <li><a href="#" style="white-space: nowrap;" >CARNAVAL 2024</a></li>
+                        <li><a href="#" class="border-top" style="white-space: nowrap;">CARNAVAIS ANTERIORES</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Site/HTML/socio.html">SEJA NOSSO SÓCIO</a></li>
+                <li><a href="/Site/HTML/nossa-loja.html">NOSSA LOJA</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main tabindex="0" onclick="closeSidebar()">
         <h1>Diretoria</h1>
+        <hr>
         <p><span>Presidente de Honra:</span> Venilton Stabile</p>
         <p><span>Patrono:</span> Venilton Stabile Segundo (Segundinho)</p>
         <p><span>Presidente Administrativo:</span> Leonardo Siqueira (Nego Léo)</p>
